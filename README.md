@@ -155,8 +155,3 @@ Investors realize **net returns** after management, performance, and trading fee
 
 ---
 
-
----
-
-Do you want me to also **insert Markdown code blocks** with the image embeds (`![caption](path.png)`) so your README renders the plots inline on GitHub?
-
