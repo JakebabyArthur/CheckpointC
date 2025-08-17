@@ -70,10 +70,6 @@ We backtested the **Equal-Weighted Core Portfolio** (10 selected equities with d
 * **Volatility:** Beta >1.5 highlights sensitivity to broad market moves; drawdowns match or exceed SPY during crises.
 * **Risk gate utility:** The six-month trend filter would have delayed exposure in downturns such as 2008 or COVID onset.
 
-📊 *Visuals (insert into repo):*
-
-* `cumulative_total_return_core_vs_spy.png`
-* `drawdowns_core_vs_spy.png`
 
 ---
 
@@ -90,9 +86,7 @@ We generated **500 Monte Carlo terminal wealth outcomes** using block bootstrapp
 * **Distribution:** Very wide dispersion, reflecting technology-sector risk.
 * **Investor takeaway:** While left-tail outcomes are severe, median and upper-tail wealth creation are compelling.
 
-📊 *Visuals (insert into repo):*
-
-* `monte_carlo_terminal_wealth_hist.png`
+![Monte Carlo Terminal Wealth](monte_carlo_terminal_wealth_hist.png)
 
 ---
 
@@ -112,9 +106,7 @@ Investors realize **net returns** after management, performance, and trading fee
 * **Risk-adjusted:** Sharpe remains comfortably above 0.8 net of fees.
 * **Trading costs:** Modeled conservatively at 5–10 bps/yr.
 
-📄 *Download for appendix:*
-
-* `roi_fee_table_aligned.csv`
+[Download ROI Fee Table (Aligned with Summary Alpha)](roi_fee_table_aligned.csv)
 
 ---
 
@@ -130,6 +122,10 @@ Investors realize **net returns** after management, performance, and trading fee
 * **Return spread:** ETF outpaces SPY by >30% annually even after fees.
 * **Risk:** Both suffer deep drawdowns; risk gate aims to improve future resilience.
 * **Sharpe ratio:** ETF demonstrates superior risk-adjusted returns.
+
+
+![Cumulative Total Return: Core vs SPY](cumulative_total_return_core_vs_spy.png)
+![Drawdowns: Core vs SPY](drawdowns_core_vs_spy.png)
 
 ---
 
