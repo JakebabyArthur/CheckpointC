@@ -61,9 +61,9 @@ Results are computed on total-return daily data over 2012–2024 for the rules-b
 | **Max Drawdown**       | **–60.36%** |           –55% |
 | **Latest 6m Trend**    |     +36.84% |           +15% |
 
-* **Interpretation:** The ETF delivered extremely high compounded returns, with materially higher risk-adjusted performance (Sharpe 1.22 vs \~0.55 for S&P).
+* **Interpretation:** The ETF delivered extremely high compounded returns, with materially higher risk-adjusted performance (Sharpe 0.94 vs \~0.55 for S&P).
 * **Volatility:** Beta >1.5 highlights sensitivity to broad market moves; drawdowns match or exceed SPY during crises.
-* **Risk gate utility:** The six-month trend filter would have delayed exposure in downturns such as 2008 or COVID onset.
+* **Risk gate utility:** The six-month trend filter would have delayed exposure in downturns such as COVID onset.
 
 
 ---
@@ -108,7 +108,7 @@ Investors realize **net returns** after management, performance, and trading fee
 | **2% Mgmt + 10% Perf** |      43.9% |    39.3% |     14.8% |               0.82 |
 | **2% Mgmt + 20% Perf** |      43.9% |    36.8% |     13.0% |               0.78 |
 
-* **Impact of fees:** Even under high-fee scenarios, net CAGR remains multiples higher than SPY’s \~7–8%.
+* **Impact of fees:** Even under high-fee scenarios, net CAGR remains multiples higher than SPY’s \~12.69%.
 * **Risk-adjusted:** Sharpe remains comfortably above 0.8 net of fees.
 * **Trading costs:** Modeled conservatively at 5–10 bps/yr.
 
@@ -120,7 +120,7 @@ Investors realize **net returns** after management, performance, and trading fee
 
 | Metric           | FTI-ETF (Gross) | FTI-ETF (Net, 2% fee) | S&P 500 |
 | ---------------- | --------------: | --------------------: | -------: |
-| **CAGR**         |         \~43.9% |               \~41.8% |   12.69& |
+| **CAGR**         |         \~43.9% |               \~41.8% |   12.69% |
 | **Sharpe Ratio** |            0.94 |                  0.85 |     0.55 |
 | **Alpha**        |          +18.6% |                +16.6% |       0% |
 | **Max Drawdown** |            –60% |                  –60% |     –55% |
@@ -145,7 +145,7 @@ Investors realize **net returns** after management, performance, and trading fee
 
 * **What it shows:** Peak-to-trough declines as a fraction of previous highs.
 * **ETF drawdowns:** Up to –60% during crises (greater than SPY’s –55%).
-* **S\&P drawdowns:** Shallower but still large in 2008, 2020, etc.
+* **S\&P drawdowns:** Shallower but still large in 2020, etc.
 * **Interpretation:** Confirms that while the ETF earns much higher returns, **it pays for that with higher risk and deeper drawdowns**.
 
 
@@ -172,7 +172,7 @@ Investors realize **net returns** after management, performance, and trading fee
   * Sharpe = annualized mean excess return ÷ annualized vol.
   * Alpha = regression intercept annualized; Beta = slope vs SPY.
   * Drawdowns = deviation from running peak.
-* **Monte Carlo:** 500 bootstrapped 25-year paths from historical residuals; percentiles reported.
+* **Monte Carlo:** 10000 bootstrapped 25-year paths from historical residuals; percentiles reported.
 * **Fees:** Management = 1–2%/yr; Performance = 10–20% of alpha; Trading = 5–10 bps/yr.
 
 ---
@@ -182,7 +182,7 @@ Investors realize **net returns** after management, performance, and trading fee
 
 ### Strengths
 
-* **Extraordinary long-run return:** CAGR ≈ **43.9%** gross vs S\&P ≈ 12.7%.
+* **Extraordinary long-run return:** CAGR ≈ **43.9%** gross vs S\&P ≈ 12.69%.
 * **Strong alpha:** \~18.6% annualized excess return, even after accounting for beta.
 * **High Sharpe Ratio:** 0.94 (ETF) vs \~0.55 (S\&P). Meaning better risk-adjusted return.
 * **Investor differentiation:** Rule-based, momentum + risk gate avoids being “just another tech ETF.”
@@ -195,7 +195,7 @@ Investors realize **net returns** after management, performance, and trading fee
 
 ### Net-of-Fee Results
 
-* Even after **2% management + 20% performance fee**, CAGR stays **\~36.8%**, still way above S\&P’s \~7–8%.
+* Even after **2% management + 20% performance fee**, CAGR stays **\~36.8%**, still way above S\&P’s \~12.69%.
 * Sharpe remains >0.8 net of fees.
 * This means **the ETF has commercial viability** even with realistic fee structures.
 
