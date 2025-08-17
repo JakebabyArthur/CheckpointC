@@ -132,7 +132,7 @@ Investors realize **net returns** after management, performance, and trading fee
 
 ![Cumulative Total Return: Core vs SPY](cumulative_total_return_core_vs_spy.png)
 
-### 2. **Cumulative Total Return (Core vs SPY)**
+###  **Cumulative Total Return (Core vs SPY)**
 
 * **What it shows:** Growth of \$1 invested in the ETF vs S\&P 500 over the overlapping backtest (2012–2024).
 * **ETF curve:** Steeply rising compared to S\&P, reflecting very high CAGR (\~43.9%).
@@ -141,7 +141,7 @@ Investors realize **net returns** after management, performance, and trading fee
 
 ![Drawdowns: Core vs SPY](drawdowns_core_vs_spy.png)
 
-### 3. **Drawdowns (Core vs SPY)**
+### **Drawdowns (Core vs SPY)**
 
 * **What it shows:** Peak-to-trough declines as a fraction of previous highs.
 * **ETF drawdowns:** Up to –60% during crises (greater than SPY’s –55%).
