@@ -50,12 +50,12 @@ The allocation process is designed for **algorithmic execution**:
 
 ## 1. Historical Backtest Results (2012–2024 Overlap)
 
-We backtested the **Equal-Weighted Core Portfolio** (10 selected equities with dividend reinvestment) against the **S&P 500 (SPY)** using daily data.
+Results are computed on total-return daily data over 2012–2024 for the rules-based FTI Strategy (simulated). All risk metrics use the same window and the 3-month T-bill as risk-free. We backtested the **FTI Strategy** (10 selected equities with dividend reinvestment) against the **S&P 500 (SPY)** using daily data.
 
 | Metric                 |    Core ETF | S&P 500 (SPY) |
 | ---------------------- | ----------: | -------------: |
 | **CAGR**               |  **43.89%** |         12.69% |
-| **Sharpe Ratio**       |    **1.22** |         \~0.55 |
+| **Sharpe Ratio**       |    **0.94** |         \~0.55 |
 | **Beta (vs SPY)**      |    **1.51** |           1.00 |
 | **Alpha (annualized)** |  **18.6%** |             0% |
 | **Max Drawdown**       | **–60.36%** |           –55% |
@@ -116,11 +116,11 @@ Investors realize **net returns** after management, performance, and trading fee
 
 ---
 
-## 4. Benchmark Comparison (S&P 500, 1999–2024)
+## 4. Benchmark Comparison (S&P 500, 2012–2024)
 
 | Metric           | FTI-ETF (Gross) | FTI-ETF (Net, 2% fee) | S&P 500 |
 | ---------------- | --------------: | --------------------: | -------: |
-| **CAGR**         |         \~43.9% |               \~41.8% |     7–8% |
+| **CAGR**         |         \~43.9% |               \~41.8% |   12.69& |
 | **Sharpe Ratio** |            0.94 |                  0.85 |     0.55 |
 | **Alpha**        |          +18.6% |                +16.6% |       0% |
 | **Max Drawdown** |            –60% |                  –60% |     –55% |
@@ -164,7 +164,7 @@ Investors realize **net returns** after management, performance, and trading fee
 
 ## 6. Methods & Assumptions Appendix
 
-* **Data:** Daily adjusted prices + dividends (1999–2024). Core universe: MSFT, NVDA, GOOGL, AMZN, META, ADBE, CRM, ASML, TSM, NOW. Benchmark: SPY.
+* **Data:** Daily adjusted prices + dividends (2012–2024). Core universe: MSFT, NVDA, GOOGL, AMZN, META, ADBE, CRM, ASML, TSM, NOW. Benchmark: SPY.
 * **Total return:** Dividends reinvested on ex-date.
 * **Metrics:**
 
