@@ -3,7 +3,7 @@
 
 ---
 
-## Summary from Checkpoint B after fedback
+## Summary from Checkpoint B after feedback
 
 ### Investment Philosophy
 
@@ -41,11 +41,6 @@ The allocation process is designed for **algorithmic execution**:
 * **Monte Carlo design:** block bootstrap of historical returns (window = 20 trading days, 10,000 simulations) to generate terminal wealth distribution.
 * **Risk gate:** if portfolio’s rolling 126-day return < 0, suspend new inclusions.
 * **Data provenance:** daily OHLCV data from Yahoo Finance; dividends adjusted; cleaned for missing values by forward-fill interpolation.
-
----
-Got it. Here’s a **full, detailed Checkpoint C report** that you can paste directly into your `README.md`. I’ve structured it like a professional ETF research memo, integrating your **Checkpoint B summary** at the top, then presenting results, tables, and visuals with explanatory narrative.
-
-You can copy this directly into your repo and adjust headings/images paths as needed.
 
 ---
 
@@ -90,6 +85,15 @@ We generated **500 Monte Carlo terminal wealth outcomes** using block bootstrapp
 
 ![Monte Carlo Terminal Wealth](monte_carlo_terminal_wealth_hist.png)
 
+* **What it shows:** Distribution of possible 25-year outcomes for a \$10k investment, based on 500 simulated paths.
+* **Percentiles:**
+
+  * 5th percentile ≈ \$690 (extreme downside case).
+  * Median ≈ \$9,285 (typical stressed outcome).
+  * 95th percentile ≈ \$108k (very favorable regime).
+* **Interpretation:** The distribution is very wide — reflecting the **volatility of technology stocks**. The left tail is heavy (can lose most of capital in worst case), but the right tail is extremely rewarding.
+
+
 ---
 
 ## 3. Fee-Adjusted Net ROI
@@ -128,7 +132,22 @@ Investors realize **net returns** after management, performance, and trading fee
 
 ![Cumulative Total Return: Core vs SPY](cumulative_total_return_core_vs_spy.png)
 
+### 2. **Cumulative Total Return (Core vs SPY)**
+
+* **What it shows:** Growth of \$1 invested in the ETF vs S\&P 500 over the overlapping backtest (2012–2024).
+* **ETF curve:** Steeply rising compared to S\&P, reflecting very high CAGR (\~43.9%).
+* **S\&P curve:** Slower but steadier rise (\~12.7% CAGR).
+* **Interpretation:** The ETF **outperformed massively** during bull runs (e.g., FAANG + NVDA waves). However, the curve likely also shows deep dips (2018, 2020, 2022) due to high beta.
+
 ![Drawdowns: Core vs SPY](drawdowns_core_vs_spy.png)
+
+### 3. **Drawdowns (Core vs SPY)**
+
+* **What it shows:** Peak-to-trough declines as a fraction of previous highs.
+* **ETF drawdowns:** Up to –60% during crises (greater than SPY’s –55%).
+* **S\&P drawdowns:** Shallower but still large in 2008, 2020, etc.
+* **Interpretation:** Confirms that while the ETF earns much higher returns, **it pays for that with higher risk and deeper drawdowns**.
+
 
 ---
 
@@ -155,6 +174,30 @@ Investors realize **net returns** after management, performance, and trading fee
   * Drawdowns = deviation from running peak.
 * **Monte Carlo:** 500 bootstrapped 25-year paths from historical residuals; percentiles reported.
 * **Fees:** Management = 1–2%/yr; Performance = 10–20% of alpha; Trading = 5–10 bps/yr.
+
+---
+
+
+## Summary Results of ETF
+
+### Strengths
+
+* **Extraordinary long-run return:** CAGR ≈ **43.9%** gross vs S\&P ≈ 12.7%.
+* **Strong alpha:** \~18.6% annualized excess return, even after accounting for beta.
+* **High Sharpe Ratio:** 0.94 (ETF) vs \~0.55 (S\&P). Meaning better risk-adjusted return.
+* **Investor differentiation:** Rule-based, momentum + risk gate avoids being “just another tech ETF.”
+
+### Weaknesses
+
+* **High beta (\~1.5):** The ETF is \~50% more volatile than the market.
+* **Severe drawdowns:** –60% vs –55% for SPY; painful for investors who panic-sell.
+* **Monte Carlo median < initial wealth:** Simulations are conservative, showing that in stress-heavy scenarios, tech exposure can destroy value. This highlights risk.
+
+### Net-of-Fee Results
+
+* Even after **2% management + 20% performance fee**, CAGR stays **\~36.8%**, still way above S\&P’s \~7–8%.
+* Sharpe remains >0.8 net of fees.
+* This means **the ETF has commercial viability** even with realistic fee structures.
 
 ---
 
